@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resturants_sort_up"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:ems="10"
+            android:inputType="textPersonName" />
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="7dp"
+            android:onClick="movetomysearch"
+            app:srcCompat="@drawable/search_btn_black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sortdown"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="3dp"
+            android:text="sort▼"
+            android:onClick="sort_down"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/random"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:onClick="random"
+            android:text="Random"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resturants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

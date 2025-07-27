@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcceptMeal"
+    android:background="@color/black"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:text="Name"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/bodyname"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Address"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Phone"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/phonebody"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Name of the Meal"
+        android:textColor="@color/white" />
+
+
+
+    <TextView
+        android:id="@+id/nameofmealorderd"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Number of This Meal Orderd"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/descreptionmealorderd"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="All Price"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Pricemealorder"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Comment"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/commentmealorderd"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text=" Date"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/black" />
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="135dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="125dp"
+        android:backgroundTint="#FFFFFF"
+        android:checkable="false"
+        android:clickable="true"
+        android:onClick="Done"
+        android:text=" D o n e "
+        android:textColor="@color/black" />
+</LinearLayout>
+</ScrollView>

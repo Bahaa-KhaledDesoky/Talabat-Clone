@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AcceptMeal"></activity>
+        <activity android:name=".ownermyorders" />
+        <activity android:name=".EditprofileOwner" />
+        <activity android:name=".editOrder" />
+        <activity android:name=".SearchinMeals" />
+        <activity android:name=".SigninOwnerEnter" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".ResturantDetailsSortDown" />
+        <activity android:name=".ResturantDetailsSortUp" />
+        <activity android:name=".Resturant_sort_down" />
+        <activity android:name=".Resturants_sort_up" />
+        <activity android:name=".OrderPage" />
+        <activity android:name=".ResturantDetails" />
+        <activity android:name=".SearchForResturants_random" />
+        <activity android:name=".Sort_down" />
+        <activity android:name=".Sort_up" />
+        <activity android:name=".Cart" />
+        <activity android:name=".EditorDelete" />
+        <activity android:name=".AddMeals" />
+        <activity android:name=".ResturantOwnerDetails" />
+        <activity android:name=".Sign_upp" />
+        <activity android:name=".Sign_in" />
+        <activity android:name=".FirstPage" />
+        <activity android:name=".OwnerHome" />
+        <activity android:name=".CustomerHome" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="data.customerProvider"
+            android:authorities="com.example.android.customerData" />
+        <provider
+            android:name="data.orderProvider"
+            android:authorities="com.example.android.orderData" />
+        <provider
+            android:name="data.mealProvider"
+            android:authorities="com.example.android.mealData" />
+        <provider
+            android:name="data.resturantProvider"
+            android:authorities="com.example.android.resturantData" />
+        <provider
+            android:name="data.userProvider"
+            android:authorities="com.example.android.userData" />
+        <provider
+            android:name="data.ownerProvider"
+            android:authorities="com.example.android.ownerData" />
+    </application>
+
+</manifest>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CustomerHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="417dp"
+            android:layout_height="53dp"
+            android:background="@color/black"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="423dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:onClick="movetocart"
+                app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="213dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="50dp"
+                app:srcCompat="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="movetoSearch"
+                app:srcCompat="@drawable/search_btn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="410dp"
+            android:layout_height="201dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="What would you like to eat ?"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="410dp"
+            android:layout_height="201dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best Seller"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="174dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/fisrt"/>
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="71dp"
+                                android:text="Big Mag                                                         45 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/second"/>
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="71dp"
+                                android:text="Big Zacks                                                      60 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/third"/>
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Phiosophy                                                     90 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView22"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/fourth"/>
+
+                            <TextView
+                                android:id="@+id/textView18"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Pizza                                                     120 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="410dp"
+            android:layout_height="201dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Desserts"
+                android:textColor="@color/black"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="174dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/fifth"/>
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Chocolate Sprinkle                                               89 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/sixth"/>
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Classic Rolls Cinabon                                            110 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView21"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/seventh"/>
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Chocolate IceCream                                               49 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/eight"/>
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Melty Chocolate                                               210 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <!--        -->
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="410dp"
+            android:layout_height="201dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="174dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView99"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/ninth"/>
+
+                            <TextView
+                                android:id="@+id/textView77"
+                                android:layout_width="match_parent"
+                                android:layout_height="71dp"
+                                android:text="Iced Coffee                                                         45 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView113"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/tenth"/>
+
+                            <TextView
+                                android:id="@+id/textView98"
+                                android:layout_width="match_parent"
+                                android:layout_height="71dp"
+                                android:text="frappuccino                                                      60 L.E"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView115"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/eleventh"/>
+
+                            <TextView
+                                android:id="@+id/textView111"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Iced Mocha                                                     90 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="105dp"
+                            android:layout_height="165dp"
+                            android:orientation="vertical"
+                            android:paddingRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/imageView222"
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                tools:srcCompat="@tools:sample/avatars"
+                                android:src="@drawable/twelveth"/>
+
+                            <TextView
+                                android:id="@+id/textView168"
+                                android:layout_width="match_parent"
+                                android:layout_height="69dp"
+                                android:text="Sunshine                                                     120 L.E"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
